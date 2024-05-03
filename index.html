@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head><script type="text/javascript" charset="UTF-8">
+(function (global) {
+    global.outsystems = global.outsystems || {};
+    global.outsystems.internal = global.outsystems.internal || {};
+})(this);
+outsystems.internal.timerspolyfillResponseStart = new Date().getTime();
+outsystems.internal.startInstant = new Date();
+outsystems.internal.requestEventName = 'WebScreenClientExecuted';
+outsystems.internal.beaconRESTURL = '/PerformanceProbe/rest/BeaconInternal/WebScreenClientExecutedEvent';
+</script><title>
+	Application Status
+</title><meta name="msapplication-tap-highlight" content="no" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1, minimal-ui" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="mobile-web-app-capable" content="yes" /><meta name="format-detection" content="telephone=no" /><link type="image/x-icon" rel="shortcut icon" href="favicon.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" />
+<style>
+.OSFillParent { 
+ display: block;
+ width: 100%;
+}
+table.OSFillParent {
+ display: table;
+}
+input.OSFillParent,
+button.OSFillParent,
+select.OSFillParent,
+textarea.OSFillParent {
+ display: inline-block;
+ box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+}
+.OSInline {
+ display: inline-block;
+ *zoom: 1;
+ *display: inline;
+ vertical-align: top;
+}
+table.OSInline {
+ display: inline-table;
+}
+.OSAutoMarginTop {
+ margin-top: 10px;
+}
+table[class*="ThemeGrid_Width"] {
+ display: inline-table;
+ vertical-align: top;
+}
+div[class*="ThemeGrid_Width"] {
+ vertical-align: top;
+}
+th[class*="ThemeGrid_Width"],
+td[class*="ThemeGrid_Width"] {
+ display: table-cell;
+}
+[class*="ThemeGrid_Width"] {
+ display: inline-block;
+ box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ *zoom: 1;
+ *display: inline;
+}
+.ThemeGrid_Container {
+ box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+}
+
+</style>
+<link href="/OutSystemsUIWeb/Blocks/OutSystemsUIWeb/Private/ServiceStudioPreview.css?1596" type="text/css" rel="stylesheet" />
+<link href="/RichWidgets/Blocks/RichWidgets/RichWidgets/Feedback_AjaxWait.css?1515" type="text/css" rel="stylesheet" />
+<link href="/RichWidgets/Blocks/RichWidgets/jQueryUI/jQueryUIInternal.css?1515" type="text/css" rel="stylesheet" />
+<link href="/RichWidgets/Blocks/RichWidgets/RichWidgets/Feedback_Message.css?1515" type="text/css" rel="stylesheet" />
+<link href="/RichWidgets/Blocks/RichWidgets/RichWidgets/Icon.css?1515" type="text/css" rel="stylesheet" />
+<link href="/StudentBusApplicationMain/Blocks/StudentBusApplicationMain/Common/LayoutTopMenu.css?1591" type="text/css" rel="stylesheet" />
+    <link href="/StudentBusApplication/Theme.StudentBusApplication.css?1592" type="text/css" rel="stylesheet" />
+    <link href="/StudentBusApplication/Theme.StudentBusApplication.extra.css?1592" type="text/css" rel="stylesheet" />
+    <script id="_OSrequestInfoScript" type="text/javascript">(function(global) { global.outsystems = global.outsystems || {};global.outsystems.internal = global.outsystems.internal || {};global.outsystems.internal.requestInfo = {visitorKey:'86f1879e-254a-45c9-bb90-028bf9960f9f',visitKey:'ce5079e8-494d-4e6a-a5c6-24ab4ea663d9',sessionKey:'Edv4tuoCWkeD8AkYinfK1Q==',userKey:'246c3b82-f202-8340-4339-f0f733c0804f',requestKey:'1b5d0bab-f95a-4766-abcc-ff7bac32a38d',webScreenKey:'6983f3c9-af94-4313-bee7-919b7a8f3a5b',webScreenName:'ApplicationStatus',espaceKey:'405971e4-570d-4d60-8c6b-cbca248017e6',espaceName:'StudentBusApplicationMain',applicationKey:'2cc30211-32a3-4d43-a7d6-1537cec64ae2',applicationName:'Student Bus Application',tenantKey:'b4882d2f-7175-633c-afdb-6430c1f12b86',tenantName:'Users',environmentKey:'87c399df-18a5-4226-baae-d004439ed04b',environmentName:'PROD Platform',frontendKey:'$1$wXS0OKERvkBI2Dw9FWmV9g==OBABp2Cyd31Ecw3kXztXAKeDxqEtg9zC4rkHn+NOfFY='}})(this);</script>
+    <script src="_osjs.js?11_22_0_39859" type="text/javascript" charset="UTF-8"></script>
+    <script src="/StudentBusApplicationMain/Blocks/OutSystemsUIWeb/Private/ClosestPolyfill.en.js?1596" type="text/javascript" charset="UTF-8"></script>
+    <script src="/StudentBusApplicationMain/Blocks/OutSystemsUIWeb/Private/DeviceDetection.en.js?1596" type="text/javascript" charset="UTF-8"></script>
+    <script src="/StudentBusApplicationMain/Blocks/OutSystemsUIWeb/Private/CSSVarsPonyfill.en.js?1596" type="text/javascript" charset="UTF-8"></script>
+    <script src="/StudentBusApplicationMain/Blocks/OutSystemsUIWeb/Libraries/JSON5_2_1_0.en.js?1596" type="text/javascript" charset="UTF-8"></script>
+    <script src="/StudentBusApplicationMain/Blocks/RichWidgets/RichWidgets/Feedback_AjaxWait.en.js?1515" type="text/javascript" charset="UTF-8"></script>
+    <script src="/StudentBusApplicationMain/Blocks/RichWidgets/jQueryUI/jQueryUIInternal.en.js?1515" type="text/javascript" charset="UTF-8"></script>
+    <script src="/StudentBusApplicationMain/Blocks/RichWidgets/jQueryUI/jQueryComponents.en.js?1515" type="text/javascript" charset="UTF-8"></script>
+    <script src="/StudentBusApplicationMain/Blocks/RichWidgets/RichWidgets/Feedback_Message.en.js?1515" type="text/javascript" charset="UTF-8"></script>
+    <script src="/StudentBusApplicationMain/Blocks/OutSystemsUIWeb/Layouts/LayoutWidgets.en.js?1596" type="text/javascript" charset="UTF-8"></script>
+    <script src="/StudentBusApplicationMain/Blocks/OutSystemsUIWeb/Layouts/LayoutMenuTop.en.js?1596" type="text/javascript" charset="UTF-8"></script>
+
+</head>
+  <body data-os-cookie-policy="Secure">
+    <form method="post" action="ApplicationStatus.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="WebForm1" name="WebForm1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__OSVSTATE" id="__OSVSTATE" value="birDuHm35kVHHj+A8iK6RqINHz3CAYAFnZVBx4WJAqcAkz84wkyP1RQIeZQvJTSvS985xJFL+6domoiyO6cDKJX8FF6tW43SyFXNgulSSOpTUEbalBtFJUlq+O8Ly/NRMF9M/uLk7YVePDq8gAgJdLhWl5munfmKrvex2/N5pVoy4WBJIyjHLhp0eD/AUcRCD7Ka1jWxLPBjDjaEi73jusJz6aaQSaJ1tUUiAyAMX8+ELDfHoGYttUDWA8lHypGp3OEw0qhMUoWGJkVgi0YgiNQkMcX+VVemLulR/uvp1gZLi+VEvPUX4Du57yCsVItVv1iVEVPX92ABzFAcEh87iuDEFsjAM1f1cqYn43QAkXlMx2RHmyNOT6l/7OSzxc7MY1OCsLsC1Pf+hYNUWRVbwQ==" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['WebForm1'];
+if (!theForm) {
+    theForm = document.WebForm1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+OsPrepareCheckboxesForSubmit();
+OsFixUploadBeforeSubmit();
+if (!OsValidatorOnSubmit()) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3A176E1C" />
+</div>
+<div ><script>
+    var deviceDetect = new deviceDetection();
+
+    deviceDetect.init(420, 1024 , 
+                1366, 1600 ,
+                1920);
+</script><div  id="wt20_OutSystemsUIWeb_wt25_block_wt5_RichWidgets_wt17_block_wtdivWait" class="Feedback_AjaxWait" role="status" aria-live="polite" aria-atomic="true" style="display:none"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="height:16px;width:16px;" /> Loading...</div ><script type='text/javascript'>
+     RichWidgets_Feedback_AjaxWait_init('wt20_OutSystemsUIWeb_wt25_block_wt5_RichWidgets_wt17_block_wtdivWait');
+ </script><span id="wt20_OutSystemsUIWeb_wt25_block_wt5_RichWidgets_wt7_block"><script type='text/javascript'>
+OsRegisterExceptionHandler(RichWidgets_Feedback_Message_ErrorHandler)
+</script><div  id="wt20_OutSystemsUIWeb_wt25_block_wt5_RichWidgets_wt7_block_wtFeedback_Wrapper" class="Feedback_Message_Wrapper" aria-atomic="True" aria-live="polite"><span id="wt20_OutSystemsUIWeb_wt25_block_wt5_RichWidgets_wt7_block_wtnotify"><span class="NotifyWidget"></span><SCRIPT type="text/javascript">
+//<![CDATA[
+RichWidgets_Feedback_Message_notifyWidget ='wt20_OutSystemsUIWeb_wt25_block_wt5_RichWidgets_wt7_block_wtnotify';
+//]]>
+</SCRIPT></span></div ></span><div  class="hidden"><span class="fa fa-fw fa-angellist"></span></div ></div ><div  class="layout layout-top "><div  class="main"><header  id="wt20_OutSystemsUIWeb_wt25_block_wtHeader" class="header" role="banner"><div  style="align-items: center; display: flex; flex-flow: row; justify-content: space-between; max-height: 60px !important; padding: 5px 0px 0px 0px;"><img alt="" src="/StudentBusApplicationMain/img/tut_transparent.png?1591" style="margin-left: 5px;height: 40px; margin-bottom: 5px; margin-right: 5px; margin-top: 5px; width: 40px;" /><div  class="logout-container ThemeGrid_Width8 ThemeGrid_MarginGutter"></div ><input type="submit" name="wt20$OutSystemsUIWeb_wt25$block$wtHeader$wt17" value="Logout" id="wt20_OutSystemsUIWeb_wt25_block_wtHeader_wt17" class="logout-text Is_Default" style="margin-left: 5px;background: none; color: #d24d58; display: none; font-weight: bold; margin-bottom: 5px; margin-right: 5px; margin-top: 5px; padding: 0px;" /><div  class="logout-container ThemeGrid_Width1 ThemeGrid_MarginGutter"><div  class="user-info" align="right" style="height: 50px;"><div  class="ThemeGrid_Width12" style="height: 50px;"><div  id="wt20_OutSystemsUIWeb_wt25_block_wtHeader_wt12_OutSystemsUIWeb_wt5_block_wtContent" class="center-align flex-direction-row"><span style="align-items: center; background: #002753; border-radius: 100px; color: #fff; display: flex; flex-flow: row wrap; font-size: 20px; font-weight: bold; height: 40px; justify-content: center; margin-bottom: 0px; margin-left: 10px; margin-right: 10px; margin-top: 0px; max-width: 40px; min-width: 40px; width: 40px;">E</span><div  class="OSInline" style="margin-left: 10px"><a id="wt20_OutSystemsUIWeb_wt25_block_wtHeader_wt12_OutSystemsUIWeb_wt5_block_wtContent_wt3" title="Logout" href="javascript:__doPostBack(&#39;wt20$OutSystemsUIWeb_wt25$block$wtHeader$wt12$OutSystemsUIWeb_wt5$block$wtContent$wt3&#39;,&#39;&#39;)"><span class="fa fa-fw fa-sign-out"></span></a></div ></div ></div ></div ></div ></div ></header ><div  id="wt20_OutSystemsUIWeb_wt25_block_wtContent" class="content"><main  id="wt20_OutSystemsUIWeb_wt25_block_wtContent_wtMain" class="main-content ThemeGrid_Container" role="main"><div  style="display:none"></div ><div  align="right" style="background-color: #c3aa19; border-radius: 5px; margin-top: 20px; padding: 10px;background-color: #c3aa19; border-radius: 5px; margin-top: 20px; padding: 10px;display:none"><span style="color: #fff; font-size: 20px; font-weight: bold;">This site is only for testing and should not be used as an actual live system.</span></div ><div ><span style="font-size: 24px; font-weight: bold;">Application Status</span></div ><div  style="margin-bottom: 20px;"><div  id="wt20_OutSystemsUIWeb_wt25_block_wtContent_wtTitle"><div ></div ></div ></div ><div  class="content-top display-flex align-items-center"></div ><div  id="wt20_OutSystemsUIWeb_wt25_block_wtContent_wtMainContent" class="content-middle"><div  align="left"></div ><div ></div ><div ><table class="OSFillParent">
+	<tr>
+		<td style="font-weight: bold;">Name</td>
+		<td style="padding: 10px;">Bevan Mkhabele</td>
+	</tr>
+	<tr>
+		<td style="font-weight: bold;">Campus</td>
+		<td style="padding: 10px;">Soshanguve (South) Campus</td>
+	</tr>
+	<tr>
+		<td style="font-weight: bold;">Student Number</td>
+		<td style="padding: 10px;">224627050</td>
+	</tr>
+	<tr>
+		<td style="font-weight: bold;">Status</td>
+		<td style="padding: 10px;">Approved</td>
+	</tr>
+	<tr>
+		<td style="font-weight: bold;">Application Date</td>
+		<td style="padding: 10px;">30 Apr (3 days ago)</td>
+	</tr>
+	<tr>
+		<td style="width: 180px;font-weight: bold;">Number of cards issued</td>
+		<td style="padding: 10px;">0</td>
+	</tr>
+</table></div ><div  style="font-weight: bold;font-weight: bold;display:none"><br/><br/>NO APPLICATION WAS FOUND FOR STUDENT NUMBER 221490649<br/><br/><span style="font-weight: normal;">Click  </span><a id="wt20_OutSystemsUIWeb_wt25_block_wtContent_wtMainContent_wt33" href="Rules.aspx">here</a> <span style="font-weight: normal;">to apply</span></div ></div ></main ><footer  class="content-bottom" role="contentinfo"><div  id="wt20_OutSystemsUIWeb_wt25_block_wtContent_wtFooter" class="footer ThemeGrid_Container ph"></div ></footer ><div  id="wt20_OutSystemsUIWeb_wt25_block_wtContent_wtunderConstructionContainer" align="center" style="margin-top: 50px;"><span style="color: #d24d58; font-size: 24px; font-weight: bold;"></span></div ></div ></div ></div >
+    
+<script type="text/javascript">
+//<![CDATA[
+var OsPage_Validators =  new Array({});
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var OsPage_ValidationActive = false;
+OsValidatorOnLoad();
+
+function OsValidatorOnSubmit() {
+  if (OsPage_ValidationActive) { return OsValidatorCommonOnSubmit(); }
+  return true;
+}
+// ]]>
+</script>
+</form><script type="text/javascript">outsystems.internal.$._waitForViewstate = true;outsystems.internal.$(document).ready(function() {outsystems.internal.$('input[name=__OSVSTATE]').val('birDuHm35kVHHj+A8iK6RqINHz3CAYAFnZVBx4WJAqcAkz84wkyP1RQIeZQvJTSvS985xJFL+6domoiyO6cDKJX8FF6tW43SyFXNgulSSOpTUEbalBtFJUlq+O8Ly/NRMF9M/uLk7YVePDq8gAgJdLhWl5munfmKrvex2/N5pVoy4WBJIyjHLhp0eD/AUcRCD7Ka1jWxLPBjDjaEi73jusJz6aaQSaJ1tUUiAyAMX8+ELDfHoGYttUDWA8lHypGp3OEw0qhMUoWGJkVgi0YgiNQkMcX+VVemLulR/uvp1gZLi+VEvPUX4Du57yCsVItVv1iVEVPX92ABzFAcEh87iuDEFsjAM1f1cqYn43QAkXlMx2RHmyNOT6l/7OSzxc7MY1OCsLsC1Pf+hYNUWRVbwQ==');outsystems.internal.$._waitForViewstate = false;});</script>
+<!-- Begin Inbox Block --><link href="/EPA_Taskbox/Blocks/EPA_Taskbox/Inbox_Flow/Inbox.css?1510" type="text/css" rel="stylesheet" /><script src="/EPA_Taskbox/Blocks/EPA_Taskbox/Inbox_Flow/Inbox.js?1510" type="text/javascript" charset="UTF-8"></script><div><span id="epa_wtEPATaskbox_ViewOptions_JS"><script language="javascript">var EPATaskbox_ViewOptions = { allowGlow : false, pollInterval : 20, maxPollInterval : 1800, cookieTimeout : 2, applicationServer : ".Net", developmentMode : false};</script></span><!--[if gte IE 5.5]><![if lt IE 7]><style type="text/css">div#epa_wtEPATaskbox_ExtraStylesContainer {  _right: auto; _bottom: auto; _left: expression( ( -95 - epa_wtEPATaskbox_ExtraStylesContainer.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' ); _top: expression( ( -95 - epa_wtEPATaskbox_ExtraStylesContainer.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );}</style><![endif]><![if gte IE 7]><script>if(document.compatMode == 'BackCompat') { window.attachEvent('onload', function() { var div = document.createElement('div'); div.style.display = 'none'; div.innerHTML = "style<style type=\"text/css\">"+ " div#epa_wtEPATaskbox_ExtraStylesContainer { "+ "  "+ " _right: auto; _bottom: auto; "+ " _left: expression( ( -51 - epa_wtEPATaskbox_ExtraStylesContainer.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' ); "+ " _top: expression( ( -95 - epa_wtEPATaskbox_ExtraStylesContainer.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' ); "+ " } "+ " </style>"; document.body.appendChild(div);});};</script><![endif]><![endif]--><div id="epa_wtEPATaskbox_Container" class="EPATaskbox_Container"><div id="epa_wtEPATaskbox_ExtraStylesContainer" class="EPATaskbox_ExtraStylesContainer"><div class="EPATaskbox_IconifiedContainer"><div class="EPATaskbox_Icon_EPATaskbox_NotGlowing"></div><div class="EPATaskbox_Icon_EPATaskbox_Glowing"></div><div class="EPATaskbox_ActivityCount"></div></div><div class="EPATaskbox_ExpandedContainer"><div class="EPATaskbox_ExpandedIcon_EPATaskbox_NotGlowing"></div><div class="EPATaskbox_ExpandedIcon_EPATaskbox_Glowing"></div><div class="EPATaskbox_ExpandedText">Click here to see your activities</div></div><div class="EPATaskbox_OpenedContainer"><div class="EPATaskbox_FrameContainer"></div></div></div></div></div><!-- End Inbox Block --><script type='text/javascript'> EPATaskbox.instance = new EPATaskbox(outsystems.internal.$('.EPATaskbox_Container'), 17081, 0, false, null); </script><script src="/PerformanceProbe/performanceprobe.js?11_22_0_39859" type="text/javascript" charset="UTF-8"></script>
+  </body>
+</html>
